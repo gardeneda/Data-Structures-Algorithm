@@ -3,14 +3,12 @@ package model;
 import model.generator.*;
 import model.sort.*;
 
-import java.util.function.IntBinaryOperator;
-
 public class Main {
 
     public static void main(String[] args) {
         int[] arrayRadix = { 4625, 4586, 1330, 8792, 1594, 5729};
-        negPosIntGenerator negToPosGen = new negPosIntGenerator();
-        posIntGenerator posIntGen = new posIntGenerator();
+        Generator negToPosGen = new negPosIntGenerator();
+        Generator posIntGen = new posIntGenerator();
 
         BubbleSort bubbleSort = new BubbleSort(negToPosGen.generate(10));
         bubbleSort.bubbleSortInitiate();
@@ -36,12 +34,6 @@ public class Main {
         RadixSort radixSort = new RadixSort();
         radixSort.initiateRadixSort(arrayRadix, 10, 4);
         radixSort.printArray("RadixSort", arrayRadix);
-
-        int xs = 5;
-        int ys = 6;
-
-        IntBinaryOperator sum = Integer::sum;
-
 
 //        int i;
 //        for (i = 0; i < 5; i++) {
