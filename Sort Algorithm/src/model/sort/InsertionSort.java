@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class InsertionSort extends Printable {
+public class InsertionSort implements Printable {
     private int[] intArray;
     /*
     Has Unsorted and Sorted partitions like the BubbleSort and SelectionSort

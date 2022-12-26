@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class ShellSort extends Printable {
+public class ShellSort implements Printable {
     private int[] intArray;
     /*
     A variation of the InsertionSort

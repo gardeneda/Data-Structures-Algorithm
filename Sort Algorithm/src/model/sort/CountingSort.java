@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class CountingSort extends Printable {
+public class CountingSort implements Printable {
     private int[] array;
 
 

@@ -42,7 +42,7 @@ Lots of temporary array is made, so if memory is an issue - may not be that usef
 
 import model.Printable;
 
-public class MergeSort extends Printable {
+public class MergeSort implements Printable {
     private int[] intArray;
 
     public MergeSort(int[] input) {

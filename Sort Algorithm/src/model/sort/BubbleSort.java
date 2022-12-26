@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class BubbleSort extends Printable {
+public class BubbleSort implements Printable {
     private int[] intArray;
 
     /*

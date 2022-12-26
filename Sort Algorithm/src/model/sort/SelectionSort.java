@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class SelectionSort extends Printable {
+public class SelectionSort implements Printable {
     private int[] intArray;
     /*
     Goes through the list and places the largest number at the very end (greatest i value)

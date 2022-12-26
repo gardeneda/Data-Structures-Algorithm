@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class RadixSort extends Printable {
+public class RadixSort implements Printable {
 
     public RadixSort() {}
 

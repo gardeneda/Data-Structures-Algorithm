@@ -2,7 +2,7 @@ package model.sort;
 
 import model.Printable;
 
-public class QuickSort extends Printable {
+public class QuickSort implements Printable {
     private int[] intArray;
 
     public QuickSort(int[] input) {
