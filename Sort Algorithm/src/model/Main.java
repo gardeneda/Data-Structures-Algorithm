@@ -12,28 +12,28 @@ public class Main {
 
         BubbleSort bubbleSort = new BubbleSort(negToPosGen.generate(10));
         bubbleSort.bubbleSortInitiate();
-        Printable.printArray(bubbleSort.getName(), bubbleSort.getArray());
+        bubbleSort.printArray(bubbleSort.getName(), bubbleSort.getArray());
         SelectionSort selectionSort = new SelectionSort(negToPosGen.generate(10));
         selectionSort.selectionSortInitiate();
-        Printable.printArray(selectionSort.getName(), selectionSort.getArray());
+        selectionSort.printArray(selectionSort.getName(), selectionSort.getArray());
         InsertionSort insertionSort = new InsertionSort((negToPosGen.generate(10)));
         insertionSort.insertionSortInitiate();
-        Printable.printArray(insertionSort.getName(), insertionSort.getArray());
+        insertionSort.printArray(insertionSort.getName(), insertionSort.getArray());
         ShellSort shellSort = new ShellSort(negToPosGen.generate(10));
         shellSort.shellSortInitiation();
-        Printable.printArray(shellSort.getName(), shellSort.getArray());
+        shellSort.printArray(shellSort.getName(), shellSort.getArray());
         MergeSort mergeSort = new MergeSort(negToPosGen.generate(10));
         mergeSort.mergeSortInitiation(mergeSort.getArray(), 0, mergeSort.getArray().length);
-        Printable.printArray(mergeSort.getName(), mergeSort.getArray());
+        mergeSort.printArray(mergeSort.getName(), mergeSort.getArray());
         QuickSort quickSort = new QuickSort(negToPosGen.generate(10));
         quickSort.initiateQuickSort(quickSort.getArray(), 0, quickSort.getArray().length);
-        Printable.printArray(quickSort.getName(), quickSort.getArray());
+        quickSort.printArray(quickSort.getName(), quickSort.getArray());
         CountingSort countingSort = new CountingSort(posIntGen.generate(20));
         countingSort.initiateCountingSort(1, 20);
-        Printable.printArray(countingSort.getName(), countingSort.getArray());
+        countingSort.printArray(countingSort.getName(), countingSort.getArray());
         RadixSort radixSort = new RadixSort();
         radixSort.initiateRadixSort(arrayRadix, 10, 4);
-        Printable.printArray("RadixSort", arrayRadix);
+        radixSort.printArray("RadixSort", arrayRadix);
 
 //        int i;
 //        for (i = 0; i < 5; i++) {

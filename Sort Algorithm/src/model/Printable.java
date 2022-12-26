@@ -2,7 +2,7 @@ package model;
 
 public interface Printable {
 
-    static void printArray(String name, int[] intArray) {
+    default void printArray(String name, int[] intArray) {
         System.out.print(name + ": ");
         for (int j : intArray) {
             System.out.print(j + " ");
