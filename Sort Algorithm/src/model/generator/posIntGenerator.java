@@ -10,7 +10,7 @@ public class posIntGenerator implements Generator{
     public int[] generate(int num) {
         int[] array = new int[num];
         for (int i = 0; i < array.length; i++) {
-            int integer = random.nextInt(20 - 1 + 1) + 1;
+            int integer = random.nextInt(99 - 1 + 1) + 1;
             array[i] = integer;
         }
 

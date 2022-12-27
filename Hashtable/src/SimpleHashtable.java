@@ -72,6 +72,8 @@ public class SimpleHashtable {
     }
 
     private int hashKey(String key) {
+        // modding this will allow the value of the hashKey to be within the
+        // index of the hashtable. This function will be replaced by hashcode() in JDK implementations
 //        return key.length() % hashtable.length;
         return Math.abs(key.hashCode() % hashtable.length);
     }

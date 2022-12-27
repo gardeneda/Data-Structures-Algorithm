@@ -1,5 +1,7 @@
 package model;
 
+import model.generator.Generator;
+
 public interface Printable {
 
     default void printArray(String name, int[] intArray) {
