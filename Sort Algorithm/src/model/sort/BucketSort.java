@@ -4,6 +4,7 @@ import model.Printable;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BucketSort implements Printable {
@@ -24,7 +25,7 @@ public class BucketSort implements Printable {
             // Using Array List for buckets
             buckets[i] = new ArrayList<Integer>();
             // Using Linked List for buckets
-//            buckets[i] = new LinkedList<Integer>();
+            // buckets[i] = new LinkedList<Integer>();
         }
 
         // Scattering Phase
