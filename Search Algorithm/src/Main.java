@@ -10,6 +10,8 @@ public class Main {
         int value = selectRandomValue(array);
         System.out.println("The value we are searching for is: " + value +
                 " and it is found at the index: " + LinearSearch.search(array, value));
+
+        System.out.println();
     }
 
     /**
