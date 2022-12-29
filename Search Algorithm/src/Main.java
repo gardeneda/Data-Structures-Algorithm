@@ -1,5 +1,7 @@
+import model.BinarySearch;
 import model.LinearSearch;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -11,7 +13,22 @@ public class Main {
         System.out.println("The value we are searching for is: " + value +
                 " and it is found at the index: " + LinearSearch.search(array, value));
 
-        System.out.println();
+
+        System.out.println("\n\nTesting the Binary Search \n");
+        // Testing Binary Search Algorithm
+
+        // Array or given Collections must be sorted before initiating Binary Search
+        Arrays.sort(array);
+        int sortValue = selectRandomValue(array);
+
+        System.out.println("The value we are searching for is: " + sortValue +
+                " and it is found at the index: " + BinarySearch.iterative(array, sortValue));
+        for (int number : array) {
+            System.out.print(number + " ");
+        }
+        System.out.println("\n");
+        System.out.println("This should return a -1, as it the method is looking for " +
+                "a non existent value: Result = " + BinarySearch.iterative(array, -9999));
     }
 
     /**
