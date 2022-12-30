@@ -45,4 +45,46 @@ public class BinarySearch {
         // If no value is found
         return -1;
     }
+    /**
+     * The function that you call to begin a recursive version of the binary search algorithm.
+     * Searches for an integer value in the given integer array.
+     * Time complexity is O(log n).
+     * <p></p>
+     * @param input a sorted Integer Array
+     * @param value the integer value being searched for
+     * @return the index of the value, if return value -1 the value does not exist in the array.
+     **/
+    public static int recursive(int[] input, int value) {
+        return recursive(input, 0, input.length, value);
+    }
+
+    /**
+     * Method overload of the binary search function to represent it in a recursive form.
+     * Searches the given int value within the integer array, and returns its index.
+     * This method is responsible for the actual recursion process, and therefore should
+     * not be called. Instead, to begin the recursion, the original function under @see should be called.
+     * <p></p>
+     * @param input the integer array
+     * @param start the beginning index of the given array
+     * @param end the last index of the given array
+     * @param value the integer value being searched for
+     * @return the index of the value, if value returned is -1, the value does not exist within the array.
+     * @see #recursive(int[] input, int value)
+     */
+    public static int recursive(int[] input, int start, int end, int value) {
+        if (start >= end) {
+            return -1;
+        }
+        int midpoint = (start + end) / 2;
+
+        if (input[midpoint] == value) {
+            return midpoint;
+        }
+        else if (input[midpoint] < value) {
+            return recursive(input, midpoint + 1, end, value);
+        }
+        else {
+            return recursive(input, start, midpoint, value);
+        }
+    }
 }
