@@ -66,6 +66,20 @@ public class Heap {
     }
 
     /**
+     * Sorts the heap in ascending order.
+     * WARNING: Once you use this function, the heap will no longer be a heap.
+     */
+    public void sort() {
+        int lastHeapIndex = size -1;
+        for (int i = 0; i < lastHeapIndex; i++) {
+            int tmp = heap[0];
+            heap[0] = heap[lastHeapIndex - i];
+            heap[lastHeapIndex - i] = tmp;
+            heapifyBelow(0, lastHeapIndex - i - 1);
+        }
+    }
+
+    /**
      * Because this is a Max-Heap interpretation, the peek value - which often returns the root node value,
      * will return the maximum value in the heap.
      *
@@ -96,7 +110,7 @@ public class Heap {
 
     /**
      * A {@link #heapifyBelow(int)} function that has an additional parameter
-     * for use when using the HeapSort algorithm.
+     * for use when using {@link #sort()}
      *
      * @param index the index of the starting position
      * @param lastHeapIndex the last index position of the heap

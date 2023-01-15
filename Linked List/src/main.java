@@ -13,7 +13,7 @@ public class main {
         Employee billEnd = new Employee("Bill", "End", 78);
 
         EmployeeLinkedList list = new EmployeeLinkedList();
-
+        // f
 //        System.out.println(list.isEmpty());
 //
 //        list.addToFront(janeJones);

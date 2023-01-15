@@ -22,13 +22,13 @@ public class Main {
         int sortValue = selectRandomValue(array);
 
         System.out.println("The value we are searching for is: " + sortValue +
-                " and it is found at the index: " + BinarySearch.iterative(array, sortValue));
+                " and it is found at the index: " + BinarySearch.recursive(array, sortValue));
         for (int number : array) {
             System.out.print(number + " ");
         }
         System.out.println("\n");
         System.out.println("This should return a -1, as it the method is looking for " +
-                "a non existent value: Result = " + BinarySearch.iterative(array, -9999));
+                "a non existent value: Result = " + BinarySearch.recursive(array, -9999));
     }
 
     /**
