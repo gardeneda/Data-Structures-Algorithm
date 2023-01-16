@@ -46,6 +46,8 @@ public class Main {
         pq.add(-1);
 //        System.out.println(pq.peek());
 
+        pq.remove();
+        System.out.println();
 
     }
 }

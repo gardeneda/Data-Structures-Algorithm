@@ -66,6 +66,18 @@ public class Heap {
     }
 
     /**
+     * A generic delete function that deletes the root of the heap.
+     * After the deletion, the next highest value (as this is a MAX-HEAP)
+     * will be placed within the root.
+     */
+    public int delete() {
+        int rootValue = heap[0];
+        heapifyBelow(0);
+
+        return rootValue;
+    }
+
+    /**
      * Sorts the heap in ascending order.
      * WARNING: Once you use this function, the heap will no longer be a heap.
      */
